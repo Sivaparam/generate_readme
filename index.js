@@ -46,11 +46,7 @@ const questions = [
         message: 'Enter License details:',
         choices: ['Apache', 'GNU', 'NPM', 'openBSD', 'Rust', 'WordPress'],
     },
-    {
-        type: 'input',
-        name: 'tech',
-        message: 'Enter primary technology used:',
-    },
+   
 ];
 
 // Below function sends to user input to generateMarkdown js and gets the formated data and writes to README file.
