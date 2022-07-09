@@ -1,10 +1,10 @@
-# r 
+# Professional Readme generator 
 
-  ![badge](https://img.shields.io/badge/license-GNU-brightgreen) 
+  ![badge](https://img.shields.io/badge/license-NPM-brightgreen) 
 
      ## Description 
 
-   r 
+   This allows users to quickly and easily to generate a readme file by using a command line application. This allows the project creator to devote time working on project. 
 
      ## Table of contents 
 
@@ -20,23 +20,23 @@
 
   ## Installation Steps 
 
-  t
+  Install inquirer package 'npm i inquirer@8.2.4'
    ## Usage 
 
    This section provides instrcutions for use and includes screenshots as needed. 
 
-   y 
+   to invoke the applciation, at command line use 'node index.js' 
 
    * Screenshot: 
 
-   ![alt text](./images/e)
+   ![alt text](./images/image1.png)
    ## Credits 
 
-  Collaborators for this project is/are: w 
+  Collaborators for this project is/are: Sivaranjani 
 
-  Link to github: https://github.com/s 
+  Link to github: https://github.com/Sivaparam 
 
    ## License 
 
-   License used for project is [GNU](https://choosealicense.com/licenses/gpl-3.0/)
+   License used for project is [NPM Packages](https://choosealicense.com/licenses/mit/)
 
