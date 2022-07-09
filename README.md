@@ -1,35 +1,45 @@
-# README generator 
+# Professsion README generator 
 
-   
- ## Description 
+  ![badge](https://shields.io/category/license-NPM-brightgreen) 
 
-   This project helps to generate a README file based on user input using Node js Inquirer  package . 
+    ## Description 
 
-  ## Table of contents 
+   This project helps to quickly and easily generate README file by using a command-line application using node js. This allows uthe project creator to devote more time working on the project than documentation. 
 
-  -[Description](#description)
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Credits](#credits)
-  -[License](#license)
-   
- ## Installation Steps 
+     ## Table of contents 
 
-  to install inquierer use command 'npm i inquirer and latest version'
-  
- ## Usage 
+  -[Description](#description) 
 
-   Answer set of questions that are prompted to get profesional readme file.
-  
- ## Credits 
+  -[Installation](#installation) 
 
-  Collaborators for this project is/are: developed by ranjani 
+  -[Usage](#usage) 
+
+  -[Credits](#credits) 
+
+  -[License](#license) 
+
+  ## Installation Steps 
+
+  This project uses inquirer to generate readme file. In order to install inquirer use npm i inquirer@8.2.4
+   ## Usage 
+
+   This section provides instrcutions for use and includes screenshots as needed. 
+
+   This application will be invoked by using command  node index.js 
+
+   * Screenshot: 
+
+   ![alt text](images/image1.jpg)
+   ## Credits 
+
+  Collaborators for this project is/are: Ranjani 
 
   Link to github: https://github.com/Sivaparam 
 
-  
- ## License 
+   ## License 
 
-  none 
+   ![badge](https://shields.io/category/license-NPM-brightgreen) 
+
+   ![badge] (https://shields.io/category/coverage-javascript node js-blue) 
 
 

@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// List of packages used for application
 const generate = require('./generateMarkdown');
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -27,37 +27,50 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'credits',
-        message: 'Enter details for Credits section:',
+        name: 'screenshot',
+        message: 'Enter name of screenshot to attach(with extension):',
     },
     {
         type: 'input',
-        name: 'license',
-        message: 'Enter License details:',
+        name: 'credits',
+        message: 'Enter details for Credits section:',
     },
     {
         type: 'input',
         name: 'username',
         message: 'Enter github username:',
     },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Enter License details:',
+        choices: ['Apache', 'GNU', 'NPM', 'openBSD', 'Rust', 'WordPress'],
+    },
+    {
+        type: 'input',
+        name: 'tech',
+        message: 'Enter primary technology used:',
+    },
 ];
 
-// TODO: Create a function to write README file
+// Below function sends to user input to generateMarkdown js and gets the formated data and writes to README file.
 function writeToFile(filename, data) {
     var content = generate.generateMarkdown(data);
+
     fs.writeFile(filename, content, (err) =>
-        err ? console.log(err) : console.log('success!'));
+        err ? console.log(err) : console.log('Data Successfully written to README file!'));
 }
 
-// TODO: Create a function to initialize app
+// This function prompts set of questions for user input and invokes writeToFile function
 function init() {
     inquirer.prompt(questions)
         .then(data => {
             const filename = 'README.md';
+            
             writeToFile(filename, data);
         });
 
 }
 
-// Function call to initialize app
+// invokes init function
 init();

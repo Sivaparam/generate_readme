@@ -1,38 +1,45 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) { }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) { }
+// gets the user input data and generate markdown/formatted data for README file
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) { }
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   var formatData = (`# ${data.title} \n
+  ![badge](https://shields.io/category/license-${data.license}-brightgreen) \n
     ## Description \n
    ${data.description} \n
-  ## Table of contents \n
-  -[Description](#description)
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Credits](#credits)
-  -[License](#license)
-   \n ## Installation Steps \n
+     ## Table of contents \n
+  -[Description](#description) \n
+  -[Installation](#installation) \n
+  -[Usage](#usage) \n
+  -[Credits](#credits) \n
+  -[License](#license) \n
+  ## Installation Steps \n
   ${data.installtion}
-  \n ## Usage \n
-   ${data.usage}
-  \n ## Credits \n
+   ## Usage \n
+   This section provides instrcutions for use and includes screenshots as needed. \n
+   ${data.usage} \n
+   * Screenshot: \n
+   ![alt text](images/${data.screenshot})
+   ## Credits \n
   Collaborators for this project is/are: ${data.credits} \n
   Link to github: https://github.com/${data.username} \n
-  \n ## License \n
-  ${data.license} \n
+   ## License \n
+   ![badge](https://shields.io/category/license-${data.license}-brightgreen) \n
+   ![badge] (https://shields.io/category/coverage-${data.tech}-blue) \n
 
 `);
   return formatData;
 }
 
 module.exports = { generateMarkdown };
+
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+//function renderLicenseBadge(license) { }
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+//function renderLicenseLink(license) { }
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+//function renderLicenseSection(license) { }
