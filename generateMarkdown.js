@@ -3,7 +3,8 @@
 
 function generateMarkdown(data) {
   var formatData = (`# ${data.title} \n
-  ![badge](https://shields.io/category/license-${data.license}-brightgreen) \n
+  ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)  \n
+  ![badge] (https://img.shields.io/category/coverage-${data.tech}-blue) \n
     ## Description \n
    ${data.description} \n
      ## Table of contents \n
@@ -18,13 +19,13 @@ function generateMarkdown(data) {
    This section provides instrcutions for use and includes screenshots as needed. \n
    ${data.usage} \n
    * Screenshot: \n
-   ![alt text](images/${data.screenshot})
+   ![alt text](./images/${data.screenshot})
    ## Credits \n
   Collaborators for this project is/are: ${data.credits} \n
   Link to github: https://github.com/${data.username} \n
    ## License \n
-   ![badge](https://img.shields.io/badge/<license>-<${data.license}>-<brightgreen>)  \n
-   ![badge] (https://img.shields.io/category/<coverage>-<${data.tech}>-<blue>) \n
+   License for this project https://choosealicense.com/community/
+
 
 `);
   return formatData;
