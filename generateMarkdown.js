@@ -4,7 +4,7 @@
 function generateMarkdown(data) {
   var formatData = (`# ${data.title} \n
   ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)  \n
-  ![badge](https://img.shields.io/badge/coverage-javascript-blue) \n
+  ![badge](https://img.shields.io/badge/coverage-${data.tech}-blue) \n
     ## Description \n
    ${data.description} \n
      ## Table of contents \n
