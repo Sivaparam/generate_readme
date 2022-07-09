@@ -32,6 +32,8 @@
    * Screenshot: 
 
    ![alt text](./images/image1.jpg)
+
+   ![alt text](/images/image1.jpg)
    ## Credits 
 
   Collaborators for this project is/are: ranjani 
