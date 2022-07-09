@@ -23,8 +23,8 @@ function generateMarkdown(data) {
   Collaborators for this project is/are: ${data.credits} \n
   Link to github: https://github.com/${data.username} \n
    ## License \n
-   ![badge](https://shields.io/category/license-${data.license}-brightgreen) \n
-   ![badge] (https://shields.io/category/coverage-${data.tech}-blue) \n
+   ![badge](https://img.shields.io/badge/<license>-<${data.license}>-<brightgreen>)  \n
+   ![badge] (https://img.shields.io/category/<coverage>-<${data.tech}>-<blue>) \n
 
 `);
   return formatData;
