@@ -42,12 +42,12 @@ module.exports = { generateMarkdown };
 // If there is no license, return an empty string
 function renderLicenseLink(license) { 
   const links = {
-    apache: '(https://choosealicense.com/licenses/apache-2.0/)',
-    GNU: '(https://choosealicense.com/licenses/gpl-3.0/)',
-    NPM: '(https://choosealicense.com/licenses/mit/)', 
-    openBSD: '(https://choosealicense.com/licenses/isc/)',
-    Rust: '(https://choosealicense.com/licenses/mit/)',
-    WordPress: '(https://choosealicense.com/licenses/gpl-2.0/)'
+    apache: '[Apache](https://choosealicense.com/licenses/apache-2.0/)',
+    GNU: '[GNU](https://choosealicense.com/licenses/gpl-3.0/)',
+    NPM: '[NPM Packages](https://choosealicense.com/licenses/mit/)', 
+    openBSD: '[OpenBSD](https://choosealicense.com/licenses/isc/)',
+    Rust: '[Rust](https://choosealicense.com/licenses/mit/)',
+    WordPress: '[WordPress](https://choosealicense.com/licenses/gpl-2.0/)'
   }
  return links[license]
 }
