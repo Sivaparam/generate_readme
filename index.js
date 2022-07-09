@@ -22,7 +22,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'instructions',
+        name: 'usage',
         message: 'Enter Instructions/Examples to use project:',
     },
     {
@@ -35,13 +35,18 @@ const questions = [
         name: 'license',
         message: 'Enter License details:',
     },
+    {
+        type: 'input',
+        name: 'username',
+        message: 'Enter github username:',
+    },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(filename, data) {
-   var content = generate.generateMarkdown(data);
-    fs.writeFile(filename, content, (err)=> 
-    err ? console.log(err): console.log('success!'));
+    var content = generate.generateMarkdown(data);
+    fs.writeFile(filename, content, (err) =>
+        err ? console.log(err) : console.log('success!'));
 }
 
 // TODO: Create a function to initialize app
@@ -49,7 +54,7 @@ function init() {
     inquirer.prompt(questions)
         .then(data => {
             const filename = 'README.md';
-           writeToFile(filename, data);
+            writeToFile(filename, data);
         });
 
 }

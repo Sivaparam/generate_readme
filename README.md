@@ -1,30 +1,35 @@
-# test1 
+# README generator 
 
    
- Description 
+ ## Description 
 
-  ## test2 
+   This project helps to generate a README file based on user input using Node js Inquirer  package . 
 
   ## Table of contents 
 
   -[Description](#description)
   -[Installation](#installation)
-  
-  
- Installation Steps 
+  -[Usage](#usage)
+  -[Credits](#credits)
+  -[License](#license)
+   
+ ## Installation Steps 
 
-  ## test3
+  to install inquierer use command 'npm i inquirer and latest version'
   
- Instructions 
+ ## Usage 
 
-  ## test4
+   Answer set of questions that are prompted to get profesional readme file.
   
- Credits 
+ ## Credits 
 
-  ## test5
+  Collaborators for this project is/are: developed by ranjani 
+
+  Link to github: https://github.com/Sivaparam 
+
   
- License 
+ ## License 
 
-  ## test6 
+  none 
 
 
